@@ -4,4 +4,24 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
+    color: #CECECE;
+}
+
+.border {
+    border: 1px solid #CECECE;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.my-4 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
