@@ -1,15 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnChanges, OnInit } from '@angular/core';
+import type { PostCardProps } from 'src/types';
 
 @Component({
   selector: 'app-small-card',
   templateUrl: './small-card.component.html',
   styleUrls: ['./small-card.component.css']
 })
-export class SmallCardComponent implements OnInit {
+export class SmallCardComponent implements OnChanges, PostCardProps {
+  @Input() title: string = "";
+  @Input() subtitle: string = "";
+  @Input() date: string = "";
+  @Input() image: string = "";
+  endpoint?: string;
 
-  constructor() { }
-
-  ngOnInit(): void {
+  ngOnChanges(): void {
+    if (this.title !== "") {
+      this.endpoint = `blog/posts/${this.title.replace(/ /g, "-").replace(/\?/g, "")}`;
+    }
   }
 
 }
