@@ -1,8 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
 
+:root {
+    --font-primary: #CECECE;
+    --font-primary-fade: #8A8A8A;
+    --primary: #CECECE;
+    --division-line: #1B1B1B;
+    --bg: #121212;
+    --header-h: 75px;
+    --footer-h: 200px;
+    --layout-h: calc(100vh - var(--header-h) - var(--footer-h));
+    --max-w: 900px;
+}
+
 * {
-    color: #CECECE;
+    color: var(--font-primary);
     font-family: 'Inconsolata', monospace;
     padding: 0;
     margin: 0;
@@ -10,11 +22,15 @@
 }
 
 body {
-    background-color: #121212;
+    background-color: var(--bg);
 }
 
-.container {
-    max-width: 900px;
+.layout-body {
+    min-height: var(--layout-h);
+}
+
+.main-container {
+    max-width: var(--max-w);
     margin: 0 auto;
 }
 
@@ -23,7 +39,7 @@ body {
 }
 
 .border {
-    border: 1px solid #CECECE;
+    border: 1px solid var(--primary);
 }
 
 .row {

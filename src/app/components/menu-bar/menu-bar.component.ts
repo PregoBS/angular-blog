@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import type { Link, SocialMediaLink } from 'src/types';
+import type { Link } from 'src/types';
 
 @Component({
   selector: 'app-menu-bar',
@@ -8,38 +8,21 @@ import type { Link, SocialMediaLink } from 'src/types';
 })
 export class MenuBarComponent implements OnInit {
   links: Link[] = [];
-  socialMedias: SocialMediaLink[] = [];
 
   constructor() {
     this.links = [
       {
-        endpoint: 'blog',
-        label: 'Blog',
+        endpoint: '',
+        label: 'Home',
       },
       {
         endpoint: 'resume',
         label: 'About',
       },
-      {
-        endpoint: 'contact',
-        label: 'Contact',
-      },
-      {
-        endpoint: 'projects',
-        label: 'Projects',
-      },
-    ];
-    this.socialMedias = [
-      {
-        icon: 'linkedin',
-        name: 'Linkedin',
-        url: 'https://linkedin.com',
-      },
-      {
-        icon: 'githum',
-        name: 'GitHub',
-        url: 'https://github.com',
-      },
+      // {
+      //   endpoint: 'projects',
+      //   label: 'Projects',
+      // },
     ];
   }
 

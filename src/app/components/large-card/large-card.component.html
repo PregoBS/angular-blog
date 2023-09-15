@@ -1,4 +1,4 @@
-<a class="text-decoration-none" href="{{ endpoint }}">
+<a class="text-decoration-none" [routerLink]="['blog', 'posts', uid, endpoint]">
     <div class="container">
         <img class="large-image" src="{{ image }}" alt="{{ title }}">
         <div>

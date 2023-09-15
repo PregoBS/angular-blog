@@ -1,0 +1,6 @@
+.small-card:not(:last-child)::after {
+    content: '';
+    display: block;
+    border-bottom: 2px solid var(--division-line);
+    margin: 0.625rem 0.325rem;
+}

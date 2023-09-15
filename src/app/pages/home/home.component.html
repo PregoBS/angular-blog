@@ -1,0 +1,13 @@
+<div class="main-container">
+    <app-menu-title [title]="title"></app-menu-title>
+    <div class="row">
+        <div class="half-width">
+            <app-large-card [uid]="posts[0].uid" [title]="posts[0].title" [image]="posts[0].image" [subtitle]="posts[0].subtitle"
+                [date]="posts[0].date"></app-large-card>
+        </div>
+        <div class="half-width">
+            <app-small-card class="small-card" *ngFor="let post of posts.slice(1, 4)" [uid]="post.uid" [title]="post.title"
+                [subtitle]="post.subtitle" [date]="post.date" [image]="post.image"></app-small-card>
+        </div>
+    </div>
+</div>

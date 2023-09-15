@@ -1,0 +1,32 @@
+.footer-container {
+    display: flex;
+    justify-content: center;
+    height: var(--footer-h);
+    border-top: 1px solid var(--division-line);
+}
+
+.footer-container .content {
+    align-items: center;
+    max-width: var(--max-w);
+    width: 100%;
+    height: 100%;
+}
+
+.footer-container .content :last-child::before {
+    content: '';
+    display: block;
+    border-left: 2px solid #1B1B1B;
+    margin-left: 2rem;
+    margin-right: 0.75rem;
+}
+
+.content .home-link a {
+    font-size: 24px;
+    line-height: 2rem;
+}
+
+.content .links {
+    list-style: none;
+    line-height: 2rem;
+    margin-top: 0.375rem;
+}

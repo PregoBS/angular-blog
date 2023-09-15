@@ -1,0 +1,35 @@
+<article class="main-container">
+    <header class="post-header">
+        <img src="{{ image }}" alt="{{ title }}">
+        <span>Autor: {{ autor }} | Atualizado em: {{ updatedAt }}</span>
+        <h1>{{ title }}</h1>
+    </header>
+
+    <app-back-button></app-back-button>
+
+    <div class="paragraphs">
+        <div *ngFor="let element of content" [ngSwitch]="element.type">
+            <ng-template ngSwitchCase="p">
+                <p>{{ element.value }}</p>
+            </ng-template>
+
+            <ng-template ngSwitchCase="span">
+                <span>{{ element.value }}</span>
+            </ng-template>
+
+            <ng-template ngSwitchCase="h1">
+                <h1>{{ element.value }}</h1>
+            </ng-template>
+
+            <ng-template ngSwitchCase="h2">
+                <h1>{{ element.value }}</h1>
+            </ng-template>
+
+            <ng-template ngSwitchCase="img">
+                <img src="{{ element.props && element.props['src'] }}" alt="{{ element.props && element.props['alt'] }}" >
+            </ng-template>
+        </div>
+    </div>
+
+    <app-back-button></app-back-button>
+</article>

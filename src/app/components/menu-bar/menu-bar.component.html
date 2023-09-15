@@ -1,17 +1,17 @@
-<nav class="row items-center space-between navigator">
-    <div class="row items-center">
-        <a class="text-decoration-none logo" href="/">
-            <img src="" alt="logo">
-        </a>
+<header>
+    <nav class="row items-center navigator">
+        <!-- <div class="row items-center"> -->
+            <!-- <a class="text-decoration-none logo" href="/">
+                <img src="" alt="logo">
+            </a> -->
 
-        <ul class="row links">
-            <li *ngFor="let link of links"><a class="text-decoration-none" href="{{ link.endpoint }}">{{ link.label
-                    }}</a></li>
-        </ul>
-    </div>
-
-    <ul class="row links social-media">
-        <li *ngFor="let media of socialMedias"><a class="text-decoration-none" href="{{ media.url }}" target="_blank">{{ media.name
-                }}</a></li>
-    </ul>
-</nav>
+            <ul class="row links">
+                <li *ngFor="let link of links">
+                    <a class="text-decoration-none" href="{{ link.endpoint }}">
+                        {{ link.label }}
+                    </a>
+                </li>
+            </ul>
+        <!-- </div> -->
+    </nav>
+</header>

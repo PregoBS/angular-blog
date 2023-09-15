@@ -1,0 +1,31 @@
+.section {
+    margin: 0.875rem 0;
+}
+
+.section h1 {
+    font-size: 16px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid var(--primary);
+}
+
+.section .item-table {
+    width: 100%;
+    margin: 0.375rem 0;
+    padding: 0 0.5rem;
+}
+
+.section .item-table .first-item {
+    font-weight: 800;
+}
+
+.section .item-table tr {
+    line-height: 1rem;
+}
+
+.section .item-table tr .left {
+    text-align: left;
+}
+
+.section .item-table tr .right {
+    text-align: right;
+}

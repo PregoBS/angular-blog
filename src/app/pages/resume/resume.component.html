@@ -1,0 +1,9 @@
+<div class="main-container resume">
+    <app-resume-header></app-resume-header>
+
+    <app-resume-section
+        *ngFor="let section of sections"
+        [sectionName]="section.name"
+        [sectionEntries]="section.entries">
+    </app-resume-section>
+</div>

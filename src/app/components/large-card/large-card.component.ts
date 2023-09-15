@@ -11,13 +11,14 @@ export class LargeCardComponent implements OnChanges, PostCardProps {
   @Input() subtitle: string = "";
   @Input() date: string = "";
   @Input() image: string = "";
+  @Input() uid: string = "";
   endpoint?: string;
 
   constructor() { }
 
   ngOnChanges(): void {
     if (this.title !== "") {
-      this.endpoint = `blog/posts/${this.title.replace(/ /g, "-").replace(/\?/g, "")}`;
+      this.endpoint = this.title.replace(/ /g, "-").replace(/\?/g, "");
     }
   }
 

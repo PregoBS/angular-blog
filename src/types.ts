@@ -1,4 +1,5 @@
 export interface PostCardProps {
+  uid: string;
   title: string;
   subtitle: string;
   date: string;
@@ -11,7 +12,7 @@ export interface Link {
   label: string;
 }
 
-export interface SocialMediaLink {
+export interface Contact {
   icon: string;
   name: string;
   url: string;

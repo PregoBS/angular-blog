@@ -1,0 +1,14 @@
+<header class="header">
+    <h1>Rodrigo Elizeu Cherutti</h1>
+    <ul class="">
+        <li *ngFor="let item of items" [ngSwitch]="item.type">
+            <ng-template ngSwitchCase="text">
+                {{ item.label }}
+            </ng-template>
+
+            <ng-template ngSwitchCase="link">
+                <a [href]="item.link" target="_blank">{{ item.label }}</a>
+            </ng-template>
+        </li>
+    </ul>
+</header>

@@ -1,0 +1,19 @@
+<section name="education" class="section">
+    <h1>{{ sectionName }}</h1>
+
+    <table class="item-table" *ngFor="let entry of sectionEntries" [ngSwitch]="entry.type">
+        <ng-template ngSwitchCase="two-rows">
+            <tr *ngFor="let row of entry.rows" [ngClass]="{'first-item': row.firstRow }">
+                <td class="left" [attr.colspan]="row.mergeColumns ? 2 : 0">{{ row.left }}</td>
+                <td class="right">{{ row.right }}</td>
+            </tr>
+        </ng-template>
+
+        <ng-template ngSwitchCase="more-rows">
+            <tr *ngFor="let row of entry.rows" [ngClass]="{'first-item': row.firstRow }">
+                <td class="left" [attr.colspan]="row.mergeColumns ? 2 : 0">{{ row.left }}</td>
+                <td class="right">{{ row.right }}</td>
+            </tr>
+        </ng-template>
+    </table>
+</section>

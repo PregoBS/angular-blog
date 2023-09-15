@@ -1,0 +1,28 @@
+.header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 16px;
+}
+
+.header ul {
+    max-width: 350px;
+    font-size: 13px;
+    list-style: none;
+    margin: 0.5rem 0;
+    line-height: 1.125rem;
+    padding: 0;
+}
+
+.header ul li {
+    display: inline-block;
+}
+
+.header ul li:not(:first-child)::before {
+    content: "•";
+    margin: 0 0.35rem;
+}

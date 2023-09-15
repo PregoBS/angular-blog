@@ -1,0 +1,20 @@
+<footer class="footer-container">
+    <div class="content row">
+        <div class="navigator">
+            <div class="home-link">
+                <a class="" [routerLink]="['resume']">{{ name }}</a>
+            </div>
+
+            <nav>
+                <ul class="links">
+                    <li *ngFor="let contact of contacts">
+                        <div class="row">
+                            <p>{{ contact.name }}:&nbsp;</p>
+                            <a href="{{ contact.url }}" target="_blank">{{ contact.url }}</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</footer>
