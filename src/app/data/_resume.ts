@@ -124,8 +124,8 @@ const _resumeHeader: ResumeHeader = {
     name: "Rodrigo Elizeu Cherutti",
     items: [
         { type: 'link', link: "mailto:rodrigocherutti@hotmail.com", label: "rodrigocherutti@hotmail.com" },
-        { type: 'link', link: "linkedin.com/in/rodrigo-cherutti", label: "LinkedIn" },
-        { type: 'link', link: "github.com/PregoBS", label: "GitHub" },
+        { type: 'link', link: "https://linkedin.com/in/rodrigo-cherutti", label: "LinkedIn" },
+        { type: 'link', link: "https://github.com/PregoBS", label: "GitHub" },
         { type: 'text', label: "Novo Hamburgo - RS" },
     ]
 };
