@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
   posts: PostCardProps[] = [];
 
   constructor() {
-    this.title = "Projects";
+    this.title = "Projetos";
   }
 
   ngOnInit(): void {
