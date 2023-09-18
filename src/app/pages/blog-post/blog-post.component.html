@@ -7,7 +7,7 @@
 
     <app-back-button></app-back-button>
 
-    <div class="paragraphs">
+    <div class="content">
         <div *ngFor="let element of content" [ngSwitch]="element.type">
             <ng-template ngSwitchCase="p">
                 <p>{{ element.value }}</p>
@@ -22,11 +22,20 @@
             </ng-template>
 
             <ng-template ngSwitchCase="h2">
-                <h1>{{ element.value }}</h1>
+                <h2>{{ element.value }}</h2>
             </ng-template>
 
-            <ng-template ngSwitchCase="img">
-                <img src="{{ element.props && element.props['src'] }}" alt="{{ element.props && element.props['alt'] }}" >
+            <ng-template ngSwitchCase="images">
+                <div class="images-container">
+                    <div class="images">
+                        <img *ngFor="let image of element.props" src="{{ image['src'] }}" alt="{{ image['alt'] }}" >
+                    </div>
+                    <p class="images-source">Fonte: {{ element.source }}</p>
+                </div>
+            </ng-template>
+
+            <ng-template ngSwitchCase="rodafoot">
+                <p class="footer-note">{{ element.value }}</p>
             </ng-template>
         </div>
     </div>

@@ -17,7 +17,7 @@ export class MenuBarComponent implements OnInit {
       },
       {
         endpoint: 'resume',
-        label: 'About',
+        label: 'Currículo',
       },
       // {
       //   endpoint: 'projects',

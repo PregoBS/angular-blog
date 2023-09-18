@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { BlogApi } from 'src/app/data/api';
+import { DataApi } from 'src/app/data/api';
 import type { BlogPost, BlogPostContent } from 'src/types-api';
 
 @Component({
@@ -28,7 +28,7 @@ export class BlogPostComponent implements OnInit {
   }
 
   private getApiBlogPost(uid: string | null): BlogPost | null {
-    const post = BlogApi.getBlogPosts().filter((_post) =>  _post.uid === uid)[0];
+    const post = DataApi.getBlogPosts().filter((_post) =>  _post.uid === uid)[0];
     return post || null;
   }
 

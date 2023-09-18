@@ -6,7 +6,8 @@
 .large-image {
     max-width: 100%;
     height: auto;
-    object-fit: contain;
+    aspect-ratio: 16/9;
+    object-fit: cover;
 }
 
 .title {

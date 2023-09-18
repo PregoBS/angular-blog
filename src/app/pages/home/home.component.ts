@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BlogApi } from 'src/app/data/api';
+import { DataApi } from 'src/app/data/api';
 import type { PostCardProps } from 'src/types';
 import { BlogPost } from 'src/types-api';
 
@@ -21,8 +21,8 @@ export class HomeComponent implements OnInit {
   }
 
   private getApiBlogPosts(): PostCardProps[] {
-    const MAX_SUBTITLE_CHARACTERS = 100;
-    const posts = BlogApi.getBlogPosts();
+    const MAX_SUBTITLE_CHARACTERS = 300;
+    const posts = DataApi.getBlogPosts();
     return posts.map((post: BlogPost) => {
       const subtitle = post.excerpt && post.excerpt.length > MAX_SUBTITLE_CHARACTERS
         ? post.excerpt.substring(0, MAX_SUBTITLE_CHARACTERS) + "..."
