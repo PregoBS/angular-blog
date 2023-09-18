@@ -17,7 +17,7 @@ export interface BlogPost {
     autor: string;
     updatedAt: string;
     image: string | null;
-    excerpt?: string | null;
+    excerpt: string;
 }
 
 export interface ResumeHeaderItem {

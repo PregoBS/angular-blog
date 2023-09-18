@@ -1,8 +1,10 @@
 <a class="text-decoration-none container row" [routerLink]="['blog', 'posts', uid, endpoint]">
-    <img class="small-image" src="{{ image }}" alt="{{ title }}">
-    <div class="content">
-        <p class="subtitle"><span class="date">{{ date }}</span></p>
-        <h1 class="title">{{ title }}</h1>
-        <p class="subtitle">{{ subtitle }}</p>
+    <div class="content-container">
+        <img class="small-image" src="{{ image }}" alt="{{ title }}">
+        <div class="content">
+            <p class="subtitle"><span class="date">{{ date }}</span></p>
+            <h1 class="title">{{ title }}</h1>
+        </div>
     </div>
+    <p class="subtitle">{{ subtitle }}</p>
 </a>
