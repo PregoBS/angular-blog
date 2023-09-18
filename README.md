@@ -1,6 +1,10 @@
-# AngularBlog
+# Angular Blog - Projects Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.1.
+see [pregobs.xyz](http://www.pregobs.xyz) in production
+
+Project made as a challenge of the Bootcamp Java + Angular | DIO
+
+I decided to use this project as a portfolio to show the projects I worked on and tell about my evolution as a programmer.
 
 ## Development server
 
