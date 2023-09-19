@@ -3,11 +3,19 @@ export type BlogPostContent = {
     value: string;
     source?: null,
     props?: null,
+    href?: null,
 } | {
     type: "images",
-    props: { [key: string]: string }[],
+    props: { alt: string, src: string }[],
     source: string;
-    value?: null
+    href?: null,
+    value?: null,
+} | {
+    type: "link",
+    value: string,
+    href: string,
+    props?: null,
+    source?: null,
 };
 
 export interface BlogPost {
