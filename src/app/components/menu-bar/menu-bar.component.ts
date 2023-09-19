@@ -19,10 +19,10 @@ export class MenuBarComponent implements OnInit {
         endpoint: 'resume',
         label: 'Currículo',
       },
-      // {
-      //   endpoint: 'projects',
-      //   label: 'Projects',
-      // },
+      {
+        endpoint: 'https://pokedex.pregobs.xyz/',
+        label: 'Pokédex',
+      },
     ];
   }
 

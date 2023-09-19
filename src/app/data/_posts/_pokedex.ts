@@ -6,6 +6,11 @@ export const _pokedexPost: BlogPost = {
     "title": "Desenvolvendo uma Pokédex com Vanilla JavaScript, HTML e CSS: A Jornada dos Primeiros 150 Pokémon",
     "content": [
         {
+            "type": "link",
+            "href": "https://pokedex.pregobs.xyz/",
+            "value": "Ir para a Pokédex >>"
+        },
+        {
             "type": "h2",
             "value": "Introdução"
         },
@@ -44,6 +49,11 @@ export const _pokedexPost: BlogPost = {
         {
             "type": "p",
             "value": "Este projeto de construção de uma Pokedex com Vanilla JavaScript, HTML e CSS foi uma jornada emocionante. Além de trazer alegria aos fãs de Pokémon, também nos ensinou valiosas lições sobre otimização de desempenho, armazenamento em cache e manipulação dinâmica de conteúdo web. Espero que este post tenha inspirado você a embarcar em sua própria aventura de programação e a explorar o mundo dos seus projetos criativos."
+        },
+        {
+            "type": "link",
+            "href": "https://pokedex.pregobs.xyz/",
+            "value": "Ir para a Pokédex >>"
         },
         {
             "type": "images",

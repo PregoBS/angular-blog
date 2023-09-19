@@ -34,6 +34,10 @@
                 </div>
             </ng-template>
 
+            <ng-template ngSwitchCase="link">
+                <a href="{{element.href}}">{{ element.value }}</a>
+            </ng-template>
+
             <ng-template ngSwitchCase="rodafoot">
                 <p class="footer-note">{{ element.value }}</p>
             </ng-template>

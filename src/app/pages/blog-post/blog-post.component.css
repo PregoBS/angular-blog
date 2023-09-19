@@ -44,6 +44,10 @@
     margin-bottom: 0.5rem;
 }
 
+.content a {
+    cursor: pointer;
+}
+
 .content .footer-note {
     font-size: 11px;
     text-align: right;
