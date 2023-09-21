@@ -14,6 +14,7 @@ import { BackButtonComponent } from './components/back-button/back-button.compon
 import { ResumeComponent } from './pages/resume/resume.component';
 import { ResumeSectionComponent } from './components/resume-section/resume-section.component';
 import { ResumeHeaderComponent } from './components/resume-header/resume-header.component';
+import { BlogPostNotFoundComponent } from './pages/blog-post-not-found/blog-post-not-found.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ResumeHeaderComponent } from './components/resume-header/resume-header.
     BackButtonComponent,
     ResumeComponent,
     ResumeSectionComponent,
-    ResumeHeaderComponent
+    ResumeHeaderComponent,
+    BlogPostNotFoundComponent
   ],
   imports: [
     BrowserModule,

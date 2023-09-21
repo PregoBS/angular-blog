@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { BlogPostComponent } from './pages/blog-post/blog-post.component';
 import { ResumeComponent } from './pages/resume/resume.component';
+import { BlogPostNotFoundComponent } from './pages/blog-post-not-found/blog-post-not-found.component';
 
 const routes: Routes = [
 	{
@@ -20,7 +21,7 @@ const routes: Routes = [
 	},
 	{
 		path: "blog/posts/not-found",
-		component: BlogPostComponent,
+		component: BlogPostNotFoundComponent,
 	},
 	{
 		path: "**",
