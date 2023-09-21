@@ -24,6 +24,10 @@
 }
 
 .navigator .links a {
-    padding: 0.25rem 0.75rem;
+    padding: 1rem 0.75rem;
+}
+
+.navigator .links li .active {
+    border-bottom: 2px solid var(--primary);
 }
 

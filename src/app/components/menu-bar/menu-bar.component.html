@@ -12,7 +12,12 @@
                     </a>
                     
                     <ng-template #internalRoute>
-                        <a class="text-decoration-none" *ngIf="!link.external" [routerLink]="[link.endpoint]">
+                        <a
+                            class="text-decoration-none"
+                            [routerLink]="[link.endpoint]"
+                            [routerLinkActive]="['active']"
+                            [routerLinkActiveOptions]="{exact: true}"
+                        >
                             {{ link.label }}
                         </a>
                     </ng-template>
