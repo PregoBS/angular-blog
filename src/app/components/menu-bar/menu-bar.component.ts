@@ -12,16 +12,19 @@ export class MenuBarComponent implements OnInit {
   constructor() {
     this.links = [
       {
-        endpoint: '',
+        endpoint: '/',
         label: 'Home',
+        external: false,
       },
       {
-        endpoint: 'resume',
+        endpoint: '/resume',
         label: 'Currículo',
+        external: false,
       },
       {
         endpoint: 'https://pokedex.pregobs.xyz/',
         label: 'Pokédex',
+        external: true,
       },
     ];
   }

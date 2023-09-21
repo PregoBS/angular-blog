@@ -10,6 +10,7 @@ export interface PostCardProps {
 export interface Link {
   endpoint: string;
   label: string;
+  external: boolean;
 }
 
 export interface Contact {

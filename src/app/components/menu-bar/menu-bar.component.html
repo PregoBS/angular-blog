@@ -7,9 +7,15 @@
 
             <ul class="row links">
                 <li *ngFor="let link of links">
-                    <a class="text-decoration-none" href="{{ link.endpoint }}">
+                    <a class="text-decoration-none" *ngIf="link.external; else internalRoute" href="{{ link.endpoint }}" target="_blank">
                         {{ link.label }}
                     </a>
+                    
+                    <ng-template #internalRoute>
+                        <a class="text-decoration-none" *ngIf="!link.external" [routerLink]="[link.endpoint]">
+                            {{ link.label }}
+                        </a>
+                    </ng-template>
                 </li>
             </ul>
         <!-- </div> -->
