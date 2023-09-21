@@ -8,6 +8,7 @@ const routes: Routes = [
 	{
 		path: "",
 		component: HomeComponent,
+		pathMatch: 'full',
 	},
 	{
 		path: "resume",
@@ -21,6 +22,11 @@ const routes: Routes = [
 		path: "blog/posts/not-found",
 		component: BlogPostComponent,
 	},
+	{
+		path: "**",
+		redirectTo: "",
+
+	}
 ];
 
 @NgModule({
