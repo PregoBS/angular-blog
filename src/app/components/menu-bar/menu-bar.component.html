@@ -1,28 +1,19 @@
 <header>
-    <nav class="row items-center navigator">
-        <!-- <div class="row items-center"> -->
-            <!-- <a class="text-decoration-none logo" href="/">
-                <img src="" alt="logo">
-            </a> -->
+  <nav class="row items-center navigator">
+    <ul class="row links">
+      <li *ngFor="let link of links">
+        <a class="text-decoration-none" *ngIf="link.external; else internalRoute" href="{{ link.endpoint }}"
+          target="_blank">
+          {{ link.label }}
+        </a>
 
-            <ul class="row links">
-                <li *ngFor="let link of links">
-                    <a class="text-decoration-none" *ngIf="link.external; else internalRoute" href="{{ link.endpoint }}" target="_blank">
-                        {{ link.label }}
-                    </a>
-                    
-                    <ng-template #internalRoute>
-                        <a
-                            class="text-decoration-none"
-                            [routerLink]="[link.endpoint]"
-                            [routerLinkActive]="['active']"
-                            [routerLinkActiveOptions]="{exact: true}"
-                        >
-                            {{ link.label }}
-                        </a>
-                    </ng-template>
-                </li>
-            </ul>
-        <!-- </div> -->
-    </nav>
+        <ng-template #internalRoute>
+          <a class="text-decoration-none" [routerLink]="[link.endpoint]" [routerLinkActive]="['active']"
+            [routerLinkActiveOptions]="{exact: true}">
+            {{ link.label }}
+          </a>
+        </ng-template>
+      </li>
+    </ul>
+  </nav>
 </header>

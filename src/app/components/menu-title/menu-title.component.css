@@ -18,9 +18,32 @@ h1::after {
     box-shadow: 0px 0px 20px 1px rgba(33,33,33,0.9);
 }
 
-/* h1::before {
-    content: "";
-    display: block;
-    border-top: 2px solid var(--division-line);
-    box-shadow: 0px 0px 20px 1px rgba(33,33,33,0.9);
-} */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 96px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    h1 {
+        font-size: 72px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    h1 {
+        font-size: 56px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    h1 {
+        font-size: 42px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: 28px;
+    }
+}

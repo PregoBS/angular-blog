@@ -12,16 +12,18 @@
     padding: 2px 6px;
     font-size: 14px;
     color: var(--font-primary-fade);
-    height: 20px;
+    height: 22px;
 }
 
 .post-header h1 {
     position: relative;
     top: -14px;
     line-height: 2rem;
+    padding: 0 12px;
 }
 
 .content {
+    padding: 0 24px;
     margin-top: 2rem;
 }
 
@@ -82,4 +84,29 @@
     /* aspect-ratio: 1; */
     height: auto;
     object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        padding: 0 12px;
+    }
+
+    .post-header span {
+        font-size: 12px;
+        top: -21px;
+        height: 21px;
+    }
+    
+    .content .images-container .images img {
+        margin: 0.5rem;
+        max-height: 400px;
+        width: auto;
+        object-fit: contain;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    .post-header span {
+        font-size: 10px;
+    }
 }

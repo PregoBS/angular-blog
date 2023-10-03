@@ -1,6 +1,35 @@
-.small-card:not(:last-child)::after {
+.posts {
+    display: flex;
+    justify-content: center;
+    padding: 0 24px;
+    margin-bottom: 128px;
+}
+
+.posts .post-container {
+    width: max(50%, 400px);
+}
+
+app-small-card:not(:last-child)::after {
     content: '';
     display: block;
     border-bottom: 2px solid var(--division-line);
-    margin: 0.625rem 0.325rem;
+    margin: 0.925rem 0;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .posts {
+        padding: 0 12px;
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+        align-items: center;
+    }
+
+    app-large-card::after {
+        content: '';
+        display: block;
+        border-bottom: 2px solid var(--division-line);
+        margin: 1.2rem 0;
+    }
 }

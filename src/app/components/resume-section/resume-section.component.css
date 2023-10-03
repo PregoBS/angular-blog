@@ -10,7 +10,7 @@
 
 .section .item-table {
     width: 100%;
-    margin: 0.375rem 0;
+    margin: 0.55rem 0;
     padding: 0 0.5rem;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .section .item-table tr {
-    line-height: 1rem;
+    line-height: 1.25rem;
 }
 
 .section .item-table tr .left {
@@ -28,4 +28,14 @@
 
 .section .item-table tr .right {
     text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+    .section .item-table {
+        margin: 0.375rem 0;
+    }
+
+    .section .item-table tr {
+        line-height: 1.15rem;
+    }
 }
