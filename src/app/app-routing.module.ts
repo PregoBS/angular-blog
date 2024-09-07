@@ -11,10 +11,10 @@ const routes: Routes = [
 		component: HomeComponent,
 		pathMatch: 'full',
 	},
-	{
-		path: "resume",
-		component: ResumeComponent,
-	},
+	// {
+	// 	path: "resume",
+	// 	component: ResumeComponent,
+	// },
 	{
 		path: "blog/posts/:uid/:title",
 		component: BlogPostComponent,
