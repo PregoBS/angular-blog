@@ -16,11 +16,11 @@ export class MenuBarComponent implements OnInit {
         label: 'Home',
         external: false,
       },
-      {
-        endpoint: '/resume',
-        label: 'Currículo',
-        external: false,
-      },
+      // {
+      //   endpoint: '/resume',
+      //   label: 'Currículo',
+      //   external: false,
+      // },
       {
         endpoint: 'https://pokedex.pregobs.xyz/',
         label: 'Pokédex',
